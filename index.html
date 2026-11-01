@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FitMate creates simple fitness, movement, and meal ideas based on your preferences.">
+  <title>FitMate | Personal Fitness Planner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="FitMate home">
+      <span class="brand-mark">F</span>
+      <span>fitmate<span class="brand-dot">.</span></span>
+    </a>
+    <a class="header-link" href="#planner">Create my plan <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR EVERYDAY WELLNESS COMPANION</p>
+        <h1>Small steps.<br><span>Stronger you.</span></h1>
+        <p class="hero-description">Discover simple workout ideas and balanced meal suggestions that fit your lifestyle and personal fitness goals.</p>
+        <a class="primary-link" href="#planner">Create my plan <span aria-hidden="true">→</span></a>
+        <div class="hero-points">
+          <span>✓ Personalized suggestions</span>
+          <span>✓ Beginner friendly</span>
+          <span>✓ Simple wellness tips</span>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Fitness and wellness illustration">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-circle">
+          <span class="art-spark">✳</span>
+          <span class="art-leaf">✦</span>
+          <div class="art-card">
+            <span class="art-card-icon">↗</span>
+            <strong>Progress</strong>
+            <span>One day at a time</span>
+            <div class="progress-track"><span></span></div>
+          </div>
+          <div class="art-person">🏃</div>
+        </div>
+        <div class="floating-tag tag-top">MOVE MORE</div>
+        <div class="floating-tag tag-bottom">FEEL BETTER ✨</div>
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div>
+        <p class="eyebrow">WHY FITMATE?</p>
+        <h2>Your wellness journey,<br>made simpler.</h2>
+      </div>
+      <p class="intro-copy">A simple starting point for building healthier everyday habits. Explore your body measurements, movement ideas, and meal inspiration in one place.</p>
+    </section>
+
+    <section class="feature-grid" aria-label="FitMate features">
+      <article class="feature-card feature-green">
+        <div class="feature-icon">◉</div>
+        <h3>Understand your body</h3>
+        <p>Explore your measurements and learn what BMI can and cannot tell you.</p>
+        <span class="feature-number">01</span>
+      </article>
+      <article class="feature-card feature-peach">
+        <div class="feature-icon">↗</div>
+        <h3>Workout ideas</h3>
+        <p>Discover beginner-friendly movement suggestions based on your goal.</p>
+        <span class="feature-number">02</span>
+      </article>
+      <article class="feature-card feature-lilac">
+        <div class="feature-icon">✿</div>
+        <h3>Meal inspiration</h3>
+        <p>Find balanced meal ideas that match your food preferences.</p>
+        <span class="feature-number">03</span>
+      </article>
+    </section>
+
+    <section class="planner-section" id="planner">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S GET STARTED</p>
+        <h2>Build your personal plan<span>.</span></h2>
+        <p>Tell us a little about yourself to explore general fitness ideas.</p>
+      </div>
+
+      <div class="planner-layout">
+        <aside class="planner-aside">
+          <div class="aside-icon">✳</div>
+          <h3>Make it<br>your journey.</h3>
+          <p>There is no one-size-fits-all approach. Start with small, realistic steps and adjust them to your comfort.</p>
+          <div class="aside-note"><span>💚</span> Consistency over perfection.</div>
+        </aside>
+
+        <form class="fitness-form" id="fitness-form">
+          <div class="form-heading">
+            <div>
+              <p class="eyebrow">YOUR DETAILS</p>
+              <h3>Your basic information</h3>
+            </div>
+            <span class="required-note">* Required fields</span>
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="age">Age <span>*</span></label>
+              <div class="input-wrap"><input type="number" id="age" name="age" min="13" max="100" placeholder="e.g. 22" required></div>
+              <small>Enter an age between 13 and 100.</small>
+            </div>
+            <div class="form-group">
+              <label for="height">Height (cm) <span>*</span></label>
+              <div class="input-wrap"><input type="number" id="height" name="height" min="100" max="250" step="0.1" placeholder="e.g. 170" required></div>
+            </div>
+            <div class="form-group">
+              <label for="weight">Weight (kg) <span>*</span></label>
+              <div class="input-wrap"><input type="number" id="weight" name="weight" min="25" max="300" step="0.1" placeholder="e.g. 65" required></div>
+            </div>
+            <div class="form-group">
+              <label for="activity">Activity level <span>*</span></label>
+              <select id="activity" name="activity" required>
+                <option value="">Choose your activity</option>
+                <option value="low">Low — mostly sitting</option>
+                <option value="moderate">Moderate — some movement</option>
+                <option value="high">High — active most days</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="goal">Fitness goal <span>*</span></label>
+              <select id="goal" name="goal" required>
+                <option value="">Choose your goal</option>
+                <option value="general">General fitness</option>
+                <option value="strength">Build strength</option>
+                <option value="endurance">Improve endurance</option>
+                <option value="flexibility">Improve flexibility</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="diet">Diet preference <span>*</span></label>
+              <select id="diet" name="diet" required>
+                <option value="">Choose your preference</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="eggetarian">Eggetarian</option>
+                <option value="nonveg">Non-vegetarian</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="form-error hidden" id="form-error" role="alert"></p>
+          <button class="submit-button" type="submit">Generate my plan <span aria-hidden="true">→</span></button>
+          <p class="privacy-note">Your details are saved only in this browser on this device.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="results-section hidden" id="results" aria-live="polite">
+      <div class="results-heading">
+        <div>
+          <p class="eyebrow">YOUR FITMATE PLAN</p>
+          <h2 id="welcome-message">Your plan is ready.</h2>
+          <p>Use these ideas as a flexible starting point. Adjust them to your comfort and routine.</p>
+        </div>
+        <div class="result-actions">
+          <button class="secondary-button" id="edit-btn" type="button">Edit details</button>
+          <button class="text-button" id="reset-btn" type="button">Reset plan</button>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <article class="stat-card"><span>Your weight</span><strong id="result-weight">—</strong><small>kg</small></article>
+        <article class="stat-card"><span>Your height</span><strong id="result-height">—</strong><small>cm</small></article>
+        <article class="stat-card"><span>Your goal</span><strong class="stat-goal" id="result-goal">—</strong><small>fitness focus</small></article>
+        <article class="stat-card bmi-card"><span>Body Mass Index</span><strong id="result-bmi">—</strong><small id="bmi-status">BMI information</small></article>
+      </div>
+
+      <div class="recommendation-grid">
+        <article class="recommendation-card">
+          <div class="recommendation-title"><span class="recommendation-icon workout-icon">↗</span><div><p class="eyebrow">MOVE WITH PURPOSE</p><h3>Your workout ideas</h3></div></div>
+          <ul id="workout-list" class="suggestion-list"></ul>
+        </article>
+        <article class="recommendation-card">
+          <div class="recommendation-title"><span class="recommendation-icon meal-icon">✿</span><div><p class="eyebrow">EAT WITH BALANCE</p><h3>Meal inspiration</h3></div></div>
+          <ul id="meal-list" class="suggestion-list"></ul>
+        </article>
+      </div>
+
+      <article class="wellness-card">
+        <span class="wellness-icon">☀</span>
+        <div><p class="eyebrow">A LITTLE REMINDER</p><h3>One helpful habit</h3><p id="wellness-tip"></p></div>
+      </article>
+      <p class="disclaimer">FitMate provides general wellness information, not medical advice or a personalized treatment or nutrition plan. BMI is a screening measure, not a diagnosis. Adult BMI categories are not used for people under 18. If you have a health condition, pain, or concerns about exercise or food, speak with a qualified healthcare professional.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">F</span><span>fitmate<span class="brand-dot">.</span></span></a>
+    <p>Small steps, big changes.</p>
+    <span>© 2026 FitMate</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
